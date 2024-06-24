@@ -190,7 +190,7 @@ For the CSV format when the field `+"`csv.header`"+` is specified a header row w
 
 func init() {
 	err := service.RegisterBatchOutput(
-		"gcp_bigquery", gcpBigQueryConfig(),
+		"gcp_bigquery_stream", gcpBigQueryConfig(),
 		func(conf *service.ParsedConfig, mgr *service.Resources) (output service.BatchOutput, batchPol service.BatchPolicy, maxInFlight int, err error) {
 			if batchPol, err = conf.FieldBatchPolicy("batching"); err != nil {
 				return

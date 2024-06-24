@@ -1,4 +1,4 @@
-module github.com/redpanda-data/redpanda-connect-plugin-example
+module github.com/mooselabs/redpanda-connect-plugin-gcp-bigquery-stream
 
 go 1.22.3
 
